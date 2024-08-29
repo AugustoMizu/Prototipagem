@@ -1,0 +1,130 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #aa00ff, white);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+}
+
+.form-wrapper {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    width: 45%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input:valid {
+    border-color: white;  
+    background-color: #f9f9f9;
+}
+
+input:invalid {
+    border-color: #aa00ff; 
+    background-color: #fff;
+}
+
+input:focus {
+    outline: none;
+    border-color: #aa00ff;
+}
+
+.input-container {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 18px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px #2d8b3c;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+    box-shadow: 0 2px #2d8b3c;
+}
+
+/* Estilo para o botão "Voltar para Início" */
+.back-home {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.back-home button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #aa00ff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px #800080;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.back-home button:hover {
+    background-color: #9900cc;
+    box-shadow: 0 2px #800080;
+}
