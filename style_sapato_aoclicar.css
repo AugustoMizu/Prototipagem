@@ -52,22 +52,22 @@ input {
 
 .produto-container2 {
     display: flex;
-    align-items: flex-start; /* Alinha a imagem e o texto no topo */
-    gap: 10px; /* Espaço entre a imagem e o texto */
+    align-items: flex-start; 
+    gap: 10px;
 }
 
 .produto-container2 img {
-    max-width: 40%; /* Limita a largura da imagem */
+    max-width: 40%; 
     height: auto;
-    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+    margin-right: 10px; 
 }
 
 .produto-container2 h1 {
-    font-size: 60px; /* Tamanho da fonte do preço */
-    color: #333; /* Cor do preço */
-    margin: 0; /* Remove a margem padrão do h1 */
+    font-size: 60px; 
+    color: #333; 
+    margin: 0; 
 }
 
 .produto-container2 p {
-    font-size: 20px; /* Tamanho da fonte dos tamanhos */
+    font-size: 20px; 
 }
