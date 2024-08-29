@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 79px;
+    background-color: purple;
+    position: relative;
+    z-index: 11;
+
+}
+.main_bar{
+    box-sizing: border-box;
+    padding: 0 10px 0 20px;
+    width: 100%;
+    height: 100%;
+    max-width: 1306px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.bar_pesq{
+    width: 100%;
+    height: 41px;
+    max-width: 633px;
+}
+input{
+    width: 100%;
+    height: 41px;
+    border-radius: 10px;
+}
+.label_icons{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+.icon{
+    display: flex;
+    margin: 0px 5px;
+    justify-content: center;
+    align-items: center;
+}
+
