@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta name="author" content="Augusto Mizu">
-    <link rel='stylesheet' type='text/css' href='style_sapato_aoclicar.css'>
+    <link rel='stylesheet' type='text/css' href='style_pagina_produto.css'>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="script_pag_prod.js" defer></script>
     <title>Produto 1</title>
 </head>
+
 <body>
     <header>
-        <div class="main_bar"> 
+        <div class="main_bar">
             <section class="bar_pesq">
                 <input type="text" placeholder="pesquisar">
             </section>
@@ -31,20 +34,33 @@
         </div>
     </header>
 
-    <main> 
-        <div class="produto-container2">
-        <img src="fotos_sapatos/sapato_foto_oficial.png" height="40%" width="40%">
-       <h1>R$ 189,99</h1>
-      
- <p>Tamanhos:</p>
-        <p>50</p>
-        <p>55</p>
-        <p>60</p>
-        <p>65</p>
-      </div>
+    <main>
+        <div class="produto_container">
+            <div class="produto_descricao">
+                descrição do produto
+            </div>
+            <div class="produto_IMG_container">
+                <img src="fotos_sapatos/sapato_foto_oficial.png" id="img_produto">
+            </div>
+            <div class="produto_buybox">
+                <h1>R$ 189,99</h1>
 
+                <p>Tamanhos:</p>
+                <p>50</p>
+                <p>55</p>
+                <p>60</p>
+                <p>65</p>
+            </div>
 
-      
+        </div>
+        <div class="loja_container">div Loja 
+            <img src="" alt="logo da loja">
+        </div>
+        <div class="carrosel_container">div Produtos similares carrossel (bootstrap)
+            <div id="carrossel_produtos"></div>
+        </div>
     </main>
+    <footer>footer com links uteis sobre impresa etc</footer>
 </body>
+
 </html>

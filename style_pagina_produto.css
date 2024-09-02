@@ -8,7 +8,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 79px;
-    background-color: purple;
+    background-color: #aa00ff;
     position: relative;
     z-index: 11;
 }
@@ -50,24 +50,33 @@ input {
     align-items: center;
 }
 
-.produto-container2 {
+.produto_container {
     display: flex;
     align-items: flex-start; 
+    flex-direction: row;
     gap: 10px;
 }
 
-.produto-container2 img {
-    max-width: 40%; 
-    height: auto;
-    margin-right: 10px; 
+.produto_IMG_container  {
+    display: flex;
+    overflow: hidden;
+    width: 60%;
+    max-width: 706px;
+}
+#img_produto{
+    width: 70%;
+    object-fit: cover;
+   /* transition: .5s all ease-in-out;*/
+    transform-origin: center center;
+    cursor: zoom-in;
 }
 
-.produto-container2 h1 {
+.produto_container h1 {
     font-size: 60px; 
     color: #333; 
     margin: 0; 
 }
 
-.produto-container2 p {
+.produto_container p {
     font-size: 20px; 
 }
