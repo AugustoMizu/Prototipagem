@@ -1,15 +1,25 @@
+// function zoom hover over
 const conteiner = document.getElementsByClassName("produto_IMG_container");
-const img_produto = document.querySelector("img_produto");
+const img_produto = document.getElementById("img_produto");
 
-conteiner.addEventeListiner("mousemove", (e) => {
-    const x = e.
+for (let i = 0; i < conteiner.length; i++) {
+    conteiner[i].addEventListener("mousemove", (e) => {
+        const x = e.clientX;
+        const y = e.clientY;
+        console.log(x, y);
+        img_produto.style.transformOrigin = `${x}px ${y}px`;
+        img_produto.style.transform = "scale(2)";
+    });
+}
 
-    console.log(x, y);
-    img_produto.style.transformOrigin = `${x}px ${y}px`;
-    img_produto.style.transform = "scale(2)";
-});
+for (let i = 0; i < conteiner.length; i++) {
+    conteiner[i].addEventListener("mouseleave", (e) => {
+        img_produto.style.transformOrigin = "center center";
+        img_produto.style.transform = "scale(1)";
+    });
+}
+/////
+// slider multi elements
+ 
 
-conteiner.addEventeListiner("mouseleave", () => {
-    img_produto.style.transformOrigin = "center center";
-    img_produto.style.transform = "scale(1)";
-});
+//
