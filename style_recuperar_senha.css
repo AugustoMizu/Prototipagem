@@ -8,6 +8,17 @@ body {
     background: linear-gradient(to bottom, #aa00ff, white);
 }
 
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+
 .container {
     background-color: #fff;
     padding: 20px;
