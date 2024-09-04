@@ -104,6 +104,41 @@ button[type="submit"]:hover {
     box-shadow: 0 2px #2d8b3c;
 }
 
+.social-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.social-login.facebook {
+    background-color: #3b5998;
+    color: white;
+}
+
+.social-login.google {
+    background-color: #db4437;
+    color: white;
+}
+
+.social-login:hover {
+    opacity: 0.9;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
 .back-home {
     margin-top: 20px;
     text-align: center;
