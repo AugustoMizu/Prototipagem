@@ -12,7 +12,10 @@ header {
     position: relative;
     z-index: 11;
 }
-
+main{
+    padding-left: 10%;
+    padding-right: 10%;
+}
 .main_bar {
     box-sizing: border-box;
     padding: 0 10px 0 20px;
@@ -23,6 +26,11 @@ header {
     justify-content: space-between;
     align-items: center;
     position: relative;
+}
+#logo{
+    height: 40px ;
+    width: 40px;
+    margin: 3%;
 }
 
 .bar_pesq {
@@ -57,14 +65,14 @@ input {
     gap: 10px;
 }
 
-.produto_IMG_container  {
+.produto_IMG_container {
     display: flex;
     overflow: hidden;
     width: 60%;
     max-width: 706px;
 }
 #img_produto{
-    width: 70%;
+    width: 60%;
     object-fit: cover;
    /* transition: .5s all ease-in-out;*/
     transform-origin: center center;
@@ -86,12 +94,20 @@ h3{
 span{
     font-size: 2rem;
 }
+.produto_descricao{
+    width: 40%;
+}
 .size_bar_conteiner{
     display: flex;
+    list-style-type: none;
   
 }
 .size_bar_item{
     margin: 5px;
-    
-    /* remover item decoration*/
+    border: solid #333 2px ;
+    border-radius: 10px;
+    padding: 5%;
+}
+.size_bar_conteiner :hover{
+    border: solid #aa00ff8a ;
 }

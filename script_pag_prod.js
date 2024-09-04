@@ -4,8 +4,8 @@ const img_produto = document.getElementById("img_produto");
 
 for (let i = 0; i < conteiner.length; i++) {
     conteiner[i].addEventListener("mousemove", (e) => {
-        const x = e.clientX;
-        const y = e.clientY;
+        const x = e.clientX - e.target.offsetLeft;
+        const y = e.clientY - e.target.offsetTop;
         console.log(x, y);
         img_produto.style.transformOrigin = `${x}px ${y}px`;
         img_produto.style.transform = "scale(2)";
