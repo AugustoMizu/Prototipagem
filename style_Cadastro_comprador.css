@@ -33,6 +33,10 @@ body {
     width: 45%;
 }
 
+.separador {
+    width: 20px; 
+}
+
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -161,4 +165,8 @@ button[type="submit"]:hover {
 .back-home button:hover {
     background-color: #9900cc;
     box-shadow: 0 2px #800080;
+}
+
+span {
+    color: red; 
 }
