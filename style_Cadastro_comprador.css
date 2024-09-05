@@ -2,11 +2,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #aa00ff, white);
+    background: linear-gradient(to bottom, #aa00ff, rgb(255, 255, 255));
+    background-size: cover;
 }
+
 
 .header {
     text-align: center;
@@ -20,8 +22,10 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-between;
-    width: 900px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
 }
 
 .form-wrapper {
@@ -30,8 +34,10 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #f9f9f9;
-    width: 45%;
+    width: 50%;
+    max-width: 1500px; 
 }
+
 
 .separador {
     width: 20px; 
@@ -170,3 +176,4 @@ button[type="submit"]:hover {
 span {
     color: red; 
 }
+
