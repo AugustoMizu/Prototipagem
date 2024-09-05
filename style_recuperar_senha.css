@@ -18,7 +18,6 @@ body {
     margin-bottom: 10px;
 }
 
-
 .container {
     background-color: #fff;
     padding: 20px;
@@ -60,4 +59,27 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #8c00ff;
+}
+
+
+.back-home button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #aa00ff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 5px 0px #8200cc;
+    text-transform: uppercase;
+}
+
+.back-home button:hover {
+    background-color: #ff00ff;
+}
+
+.back-home button:active {
+    background-color: #aa00ff;
+    box-shadow: none;
+    transform: translateY(5px);
 }
