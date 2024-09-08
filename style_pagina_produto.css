@@ -18,6 +18,12 @@ main {
     padding-right: 5%;
 }
 
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+
 .main_bar {
     box-sizing: border-box;
     padding: 0 10px 0 20px;
@@ -54,11 +60,11 @@ input {
     align-items: flex-end;
 }
 
-.icon {
-    display: flex;
+.icon {   
     margin: 0 5px;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .produto_container {
@@ -179,6 +185,7 @@ h3 {
 
 .size_bar_item.selecionado {
     /*adiciona esses parametros ao item selecionado*/
+    color: whitesmoke;
     border: solid #ff00ee 2px;
     background-color: #f52ae8;
     transform: rotateZ(6deg);
