@@ -7,8 +7,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta name="author" content="Augusto Mizu">
     <link rel='stylesheet' type='text/css' href='style_pagina_produto.css'>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="script_pag_prod.js" defer></script>
     <title>Produto 1</title>
 </head>
@@ -16,7 +15,7 @@
 <body>
     <header>
         <div class="main_bar">
-           <img src="logo_sem_fundo.png" alt="logo" id="logo">
+            <img src="IMG-20240821-WA0022.jpg" alt="logo" id="logo">
             <section class="bar_pesq">
                 <input type="text" placeholder="pesquisar">
             </section>
@@ -37,10 +36,17 @@
 
     <main>
         <div class="produto_container">
-            <div class="produto_descricao">
+            <div class="descricao_container">
                 <h3>Tênis Rainha Soho Masculino - Marinho+Bege</h3>
+                <div class="rating_box">
+                    <span class="material-symbols-outlined">star_rate</span>
+                    <span class="material-symbols-outlined">star_rate</span>
+                    <span class="material-symbols-outlined">star_rate</span>
+                    <span class="material-symbols-outlined">star_rate</span>
+                    <span class="material-symbols-outlined">star_rate</span>
+                </div>
                 <ul>
-                    <li><b>Departamento BS:</b> Esporte</li>
+                    <li><b>Departamento:</b> Esporte</li>
                     <li><b>Indicado para:</b> Dia a Dia</li>
                     <li><b>Material:</b> Sintético</li>
                     <li><b>Material Interno:</b> Têxtil</li>
@@ -51,8 +57,28 @@
                 <img src="fotos_sapatos/sapato_foto_oficial.png" id="img_produto">
             </div>
             <div class="produto_buybox">
-                <span>R$ 189,99</span>
-                <ul class="size_bar_conteiner">
+                <span name="produto_preco">R$ 99,99</span>
+                <br>
+                <label for="produto_preco">até 2x de R$ 50,00 sem juros</label>
+                <br><br>
+                <br><br>
+                <label for="">Vendido por: <a href="" id="link_loja" style="text-decoration: none;"><b>Ortopedia
+                            Palmipé</b></a></label>
+                <br><br>
+                <br><br>
+                <label for="color_bar">Selecione uma cor: </label>
+                <ul class="color_bar">
+                    <li class="color_img_list">
+                        <img src="fotos_sapatos/sapato_foto_oficial.png" alt="sapato preto" class="color_img">
+                    </li >
+                    <li class="color_img_list"><img src="fotos_sapatos/sapato_foto_oficial_verde.jpg" alt="sapato verde" class="color_img">
+                    </li>
+                    <li class="color_img_list"><img src="fotos_sapatos/sapato_foto_oficial_vermelho.jpg" alt="sapato vermelho" class="color_img">
+                    </li>
+                </ul>
+                <br><br>
+                <label for="size_bar">Tamanhos: </label>
+                <ul class="size_bar">
                     <li class="size_bar_item">50</li>
                     <li class="size_bar_item">55</li>
                     <li class="size_bar_item">60</li>
