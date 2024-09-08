@@ -1,268 +1,184 @@
-* {
-    padding: 0;
-    margin: 0;
+* /* Aplica a todos os elementos */ {
+    padding: 0; /* Remove todo o preenchimento interno */
+    margin: 0;  /* Remove toda a margem externa */
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 79px;
-    background-color: #aa00ff;
-    position: relative;
-    z-index: 11;
+
+header /* Estiliza o cabeçalho */ {
+    display: flex; /* Define o layout do cabeçalho com flexbox */
+    align-items: center; /* Centraliza verticalmente os itens */
+    justify-content: center; /* Centraliza horizontalmente os itens */
+    height: 79px; /* Define a altura do cabeçalho */
+    background-color: #aa00ff; /* Define a cor de fundo como roxa */
+    position: relative; /* Define a posição relativa para ajustes */
+    z-index: 11; /* Define a ordem de empilhamento do cabeçalho */
 }
 
-main {
-    padding-left: 5%;
-    padding-right: 5%;
+main /* Estiliza o contêiner principal */ {
+    padding-left: 5%; /* Adiciona preenchimento à esquerda */
+    padding-right: 5%; /* Adiciona preenchimento à direita */
 }
 
-.main_bar {
-    box-sizing: border-box;
-    padding: 0 10px 0 20px;
-    width: 100%;
-    height: 100%;
-    max-width: 1306px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+.main_bar /* Barra principal de navegação */ {
+    box-sizing: border-box; /* Inclui borda e preenchimento na largura total */
+    padding: 0 10px 0 20px; /* Define preenchimento interno específico */
+    width: 100%; /* Largura total do contêiner */
+    height: 100%; /* Altura total do contêiner */
+    max-width: 1306px; /* Define largura máxima */
+    display: flex; /* Utiliza flexbox para o layout */
+    justify-content: space-between; /* Espaça os elementos igualmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    position: relative; /* Posição relativa para ajustes de layout */
 }
 
-#logo {
-    border-radius: 5px;
-    width: 50px;
-    margin: 3%;
+#logo /* Estiliza o logo */ {
+    border-radius: 5px; /* Arredonda as bordas do logo */
+    width: 50px; /* Define a largura do logo */
+    margin: 3%; /* Adiciona uma margem de 3% ao redor do logo */
 }
 
-.bar_pesq {
-    width: 100%;
-    height: 41px;
-    max-width: 633px;
+.bar_pesq /* Barra de pesquisa */ {
+    width: 100%; /* Largura total da barra */
+    height: 41px; /* Altura específica da barra */
+    max-width: 633px; /* Largura máxima da barra */
 }
 
-input {
-    width: 100%;
-    height: 41px;
-    border-radius: 10px;
+input /* Campo de entrada */ {
+    width: 100%; /* Ocupa toda a largura disponível */
+    height: 41px; /* Altura específica do campo */
+    border-radius: 10px; /* Bordas arredondadas do campo */
 }
 
-.label_icons {
-    position: relative;
-    display: flex;
-    align-items: flex-end;
+.label_icons /* Contêiner para ícones de rótulo */ {
+    position: relative; /* Posição relativa para ajustes */
+    display: flex; /* Layout flexível com flexbox */
+    align-items: flex-end; /* Alinha os itens ao final do eixo vertical */
 }
 
-.icon {
-    display: flex;
-    margin: 0 5px;
-    justify-content: center;
-    align-items: center;
+.icon /* Estiliza os ícones */ {
+    display: flex; /* Utiliza flexbox para layout */
+    margin: 0 5px; /* Define margem horizontal de 5px */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
 }
 
-.produto_container {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    margin-top: 10px;
-    gap: 10px;
+.produto_container /* Contêiner do produto */ {
+    display: flex; /* Define um layout flexível */
+    align-items: flex-start; /* Alinha os itens ao início do eixo vertical */
+    flex-direction: row; /* Organiza os itens em linha horizontal */
+    margin-top: 10px; /* Adiciona uma margem superior de 10px */
+    gap: 10px; /* Espaço entre os itens */
 }
 
-.descricao_container ul {
-    list-style-type: none;
+.descricao_container ul /* Estiliza a lista de descrição */ {
+    list-style-type: none; /* Remove os marcadores da lista */
 }
 
-.produto_IMG_container {
-    background-color: #efefef;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    width: 40%;
-    min-width: 100px;
-    max-width: 706px;
+.produto_IMG_container /* Contêiner da imagem do produto */ {
+    background-color: #efefef; /* Cor de fundo cinza claro */
+    display: flex; /* Utiliza flexbox para alinhar a imagem */
+    justify-content: center; /* Centraliza a imagem */
+    overflow: hidden; /* Esconde conteúdo que excede o contêiner */
+    width: 40%; /* Largura do contêiner como 40% do espaço disponível */
+    min-width: 100px; /* Largura mínima do contêiner */
+    max-width: 706px; /* Largura máxima do contêiner */
 }
 
-#img_produto {
-    width: 60%;
-    min-width: 30vw;
-    object-fit: cover;
-    transition: .1s all ease-in-out;
-    transform-origin: center center;
-    cursor: zoom-in;
+#img_produto /* Estiliza a imagem do produto */ {
+    width: 60%; /* Largura da imagem como 60% do contêiner */
+    min-width: 30vw; /* Largura mínima da imagem como 30% da tela */
+    object-fit: cover; /* Ajusta a imagem para preencher o contêiner */
+    transition: .1s all ease-in-out; /* Transição suave para a imagem */
+    transform-origin: center center; /* Ponto de origem da transformação */
+    cursor: zoom-in; /* Cursor indica que a imagem pode ser ampliada */
 }
 
-.produto_container h1 {
-    font-size: 60px;
-    color: #333;
-    margin: 0;
+.produto_container h1 /* Título do produto */ {
+    font-size: 60px; /* Tamanho da fonte do título */
+    color: #333; /* Cor do texto como cinza escuro */
+    margin: 0; /* Remove a margem ao redor do título */
 }
 
-.produto_container p {
-    font-size: 20px;
+.produto_container p /* Descrição do produto */ {
+    font-size: 20px; /* Tamanho da fonte do parágrafo */
 }
 
-h3 {
-    margin-bottom: 10%;
+h3 /* Estiliza cabeçalhos de nível 3 */ {
+    margin-bottom: 10%; /* Margem inferior de 10% */
 }
 
-.descricao_container {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 61vh;
-    border-bottom: solid 1px;
-    border-top: solid 1px;
-    border-color: #bdbbbb;
+.descricao_container /* Contêiner de descrição */ {
+    display: flex; /* Layout flexível com flexbox */
+    flex-direction: column; /* Organiza os itens em coluna */
+    width: 30%; /* Largura do contêiner */
+    height: 61vh; /* Altura como 61% da altura da janela de visualização */
+    border-bottom: solid 1px; /* Borda inferior sólida */
+    border-top: solid 1px; /* Borda superior sólida */
+    border-color: #bdbbbb; /* Cor da borda */
 }
 
-.produto_buybox {
-    width: 30%;
-    height: 61vh;
-    border-bottom: solid 1px;
-    border-top: solid 1px;
-    border-color: #bdbbbb;
-    padding-left: 2%;
+.produto_buybox /* Caixa de compra do produto */ {
+    width: 30%; /* Largura do contêiner */
+    height: 61vh; /* Altura como 61% da altura da janela de visualização */
+    border-bottom: solid 1px; /* Borda inferior sólida */
+    border-top: solid 1px; /* Borda superior sólida */
+    border-color: #bdbbbb; /* Cor da borda */
+    padding-left: 2%; /* Preenchimento à esquerda */
 }
 
-.produto_preco {
-    font-size: 2rem;
+.produto_preco /* Estiliza o preço do produto */ {
+    font-size: 2rem; /* Tamanho da fonte para o preço */
 }
 
-.produto-preco-antigo {
-    color: antiquewhite;
+.produto-preco-antigo /* Estiliza o preço antigo do produto */ {
+    color: antiquewhite; /* Cor do preço antigo */
 }
 
-.color_bar {
-    display: flex;
-    padding-right: 10%;
-    width: fit-content;
-    list-style-type: none;
+.color_bar /* Barra de cores */ {
+    display: flex; /* Layout flexível com flexbox */
+    padding-right: 10%; /* Preenchimento à direita */
+    width: fit-content; /* Ajusta a largura para o conteúdo */
+    list-style-type: none; /* Remove os marcadores da lista */
 }
 
-.color_img {
-    margin: 2px;
-    width: 40px;
-    border: solid #efefef 2px;
-    border-radius: 5px;
+.color_img /* Imagem de cor */ {
+    margin: 2px; /* Margem de 2px ao redor da imagem */
+    width: 40px; /* Largura da imagem */
+    border: solid #efefef 2px; /* Borda sólida cinza claro */
+    border-radius: 5px; /* Arredonda as bordas */
 }
 
-.color_img:hover {
-    border: solid #aa00ff8a 2px;
+.color_img:hover /* Estiliza a imagem de cor ao passar o mouse */ {
+    border: solid #aa00ff8a 2px; /* Muda a cor da borda ao passar o mouse */
 }
 
-.color_img.selecionado {
-    border: solid #ff00ee 2px;
+.color_img.selecionado /* Imagem de cor selecionada */ {
+    border: solid #ff00ee 2px; /* Borda rosa para o item selecionado */
 }
 
-.size_bar {
-    display: flex;
-    border-bottom: solid 1px;
-    border-color: #bdbbbb;
-    width: fit-content;
-    padding-right: 10%;
-    list-style-type: none;
+.size_bar /* Barra de tamanhos */ {
+    display: flex; /* Layout flexível com flexbox */
+    border-bottom: solid 1px; /* Borda inferior sólida */
+    border-color: #bdbbbb; /* Cor da borda */
+    width: fit-content; /* Ajusta a largura para o conteúdo */
+    padding-right: 10%; /* Preenchimento à direita */
+    list-style-type: none; /* Remove os marcadores da lista */
 }
 
-.size_bar :hover {
-    border: solid #aa00ff8a 2px;
-    transform: rotateZ(6deg);
+.size_bar_item /* Item da barra de tamanhos */ {
+    justify-content: center; /* Centraliza o conteúdo do item */
+    margin: 5px; /* Margem de 5px ao redor do item */
+    border: solid #333 2px; /* Borda sólida cinza escuro */
+    border-radius: 10px; /* Arredonda as bordas */
+    padding: 5px; /* Preenchimento interno */
 }
 
-.size_bar_item {
-    justify-content: center;
-    margin: 5px;
-    border: solid #333 2px;
-    border-radius: 10px;
-    padding: 5px;
+.size_bar_item.selecionado /* Item selecionado da barra de tamanhos */ {
+    border: solid #ff00ee 2px; /* Borda rosa para o item selecionado */
+    background-color: #f52ae8; /* Cor de fundo do item selecionado */
+    transform: rotateZ(6deg); /* Gira o item em 6 graus */
 }
 
-.size_bar_item.selecionado {
-    /*adiciona esses parametros ao item selecionado*/
-    border: solid #ff00ee 2px;
-    background-color: #f52ae8;
-    transform: rotateZ(6deg);
-}
-.botao_comprar{
-    font-size: 18px;
-    font-weight: 500;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 0;
-    background-color: #532af5;
-    color: #fff;
-    height: 47px;
-    width: 100%;
-    border: 0px none #fff;
-    padding: 13px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: all .3s;
-}
-.botao_comprar
-
-/*/////css carrossel/////*/
-.product-item {
-    border: 1px solid rgb(219, 219, 219);
-}
-
-.carrossel_img {
-    position: relative;
-    overflow: hidden;
-}
-
-.btns {
-    position: absolute;
-    left: 0;
-    bottom: -100%;
-    font-size: 15px;
-    font-weight: 300;
-    transition: all 0.3s ease-in-out;
-}
-
-.btns button {
-    border: none;
-    background-color: rgb(39, 39, 39);
-    color: #fff;
-    transition: all 0.3s ease-in-out;
-}
-
-.btns button:hover {
-    color: #fcb941;
-}
-
-.carrossel_img:hover .btns {
-    bottom: 0;
-}
-
-.heart-icon {
-    position: absolute;
-    top: 16px;
-    right: 15px;
-    font-size: 18px;
-}
-
-.product-type {
-    font-size: 13px;
-    opacity: 0.8;
-}
-
-.product-name {
-    transition: all 0.3s ease-in-out;
-}
-
-.product-name:hover {
-    color: #fcb941 !important;
-}
-
-.product-price {
-    color: #fcb941;
-}
-
-.rating {
-    font-size: 5px;
-}
-
-.product-item {
-    width: 200px;
+.botao_comprar /* Estiliza o botão de compra */ {
+    /* Adicione aqui os estilos do botão de compra */
 }
