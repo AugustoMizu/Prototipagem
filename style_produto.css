@@ -169,19 +169,18 @@ main {
 footer {
     background-color: #333;
     color: #fff;
-    padding: 10px 20px; /* Reduzido o padding */
+    padding: 20px;
     text-align: center;
-    font-size: 14px; /* Fonte menor */
 }
 
 footer .footer-links {
-    margin-bottom: 10px; /* Reduzido o margin */
+    margin-bottom: 15px;
 }
 
 footer .footer-links a {
     color: #fff;
     text-decoration: none;
-    margin: 0 8px; /* Margin menor */
+    margin: 0 10px;
 }
 
 footer .footer-links a:hover {
@@ -189,39 +188,43 @@ footer .footer-links a:hover {
 }
 
 footer .footer-contact {
-    margin-bottom: 10px; /* Reduzido o margin */
+    margin-bottom: 15px;
 }
 
 footer .footer-contact p {
-    margin: 3px 0; /* Margin menor */
-    font-size: 12px; /* Fonte menor */
+    margin: 5px 0;
 }
 
 footer .footer-social {
-    margin-top: 10px; /* Reduzido o margin */
+    margin-top: 15px;
 }
 
 footer .footer-social a {
     color: #fff;
     text-decoration: none;
-    margin: 0 8px; /* Margin menor */
-    font-size: 14px; /* Fonte menor */
+    margin: 0 10px;
 }
 
 footer .footer-social a:hover {
     color: #ddd;
 }
+
 .imagens {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
 }
 
 .imagens img {
-    width: 300px; /* Ajuste o tamanho conforme necessário */
-    height: 300px; /* Definindo altura para manter proporção */
-    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
-    border-radius: 8px; /* Opcional: adicionar bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: adicionar sombra para destaque */
+    width: 150px;
+    height: auto;
+}
+
+button {
+    background-color: #9b0cd3; /* Cor de fundo, ajuste conforme necessário */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
 }
