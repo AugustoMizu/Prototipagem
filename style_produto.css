@@ -144,3 +144,84 @@ input /* Campo de entrada */ {
     color: #333; /* Cor do texto */
     font-weight: bold; /* Texto em negrito */
 }
+
+main {
+    display: flex;
+    flex-direction: column; /* Organiza os itens na vertical */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    height: 100vh; /* Ocupa a altura total da tela */
+    margin: 0; /* Remove margens extras */
+}
+
+#imagem_carrinho {
+    max-width: 100%; /* Ajusta a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+#mensagem_carrinho {
+    margin-top: 20px; /* Espaçamento entre a imagem e a mensagem */
+    text-align: center; /* Centraliza o texto */
+    font-family: 'Roboto', sans-serif; /* Aplica a fonte Roboto */
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px; /* Reduzido o padding */
+    text-align: center;
+    font-size: 14px; /* Fonte menor */
+}
+
+footer .footer-links {
+    margin-bottom: 10px; /* Reduzido o margin */
+}
+
+footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 8px; /* Margin menor */
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-contact {
+    margin-bottom: 10px; /* Reduzido o margin */
+}
+
+footer .footer-contact p {
+    margin: 3px 0; /* Margin menor */
+    font-size: 12px; /* Fonte menor */
+}
+
+footer .footer-social {
+    margin-top: 10px; /* Reduzido o margin */
+}
+
+footer .footer-social a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 8px; /* Margin menor */
+    font-size: 14px; /* Fonte menor */
+}
+
+footer .footer-social a:hover {
+    color: #ddd;
+}
+.imagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.imagens img {
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+    height: 300px; /* Definindo altura para manter proporção */
+    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+    border-radius: 8px; /* Opcional: adicionar bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: adicionar sombra para destaque */
+}
