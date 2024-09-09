@@ -70,6 +70,7 @@ input /* Campo de entrada */ {
     width: 100%; /* Largura total do contêiner */
     height: auto; /* Altura ajusta proporcionalmente */
     display: flex; /* Remove espaços em branco abaixo da imagem */
+
  
 }
 .imagens { /* meche nas imagens pequenas dos sapatos */
