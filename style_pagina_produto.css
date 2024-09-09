@@ -287,3 +287,46 @@ h3 {
 .product-item {
     width: 200px;
 }
+/*footer*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-links {
+    margin-bottom: 15px;
+}
+
+footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-contact {
+    margin-bottom: 15px;
+}
+
+footer .footer-contact p {
+    margin: 5px 0;
+}
+
+footer .footer-social {
+    margin-top: 15px;
+}
+
+footer .footer-social a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .footer-social a:hover {
+    color: #ddd;
+}

@@ -148,6 +148,10 @@ button[type="submit"]:hover {
     margin-right: 10px;
 }
 
+.social_link{
+    text-decoration: none ;
+}
+
 .back-home {
     margin-top: 20px;
     text-align: center;
