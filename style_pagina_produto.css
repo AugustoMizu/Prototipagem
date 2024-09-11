@@ -8,7 +8,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 79px;
-    background-color: #aa00ff;
+    background-color: #b17eca;
     position: relative;
     z-index: 11;
 }
@@ -157,11 +157,11 @@ h3 {
 .color_img:hover {
     box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
     transform: scale(1.01);
-    border: solid #aa00ff8a 2px;
+    border: solid #b17eca 2px;
 }
 
 .color_img.selecionado {
-    border: solid #ff00ee 2px;
+    border: solid #b17eca 2px;
 }
 
 .size_bar {
@@ -176,7 +176,7 @@ h3 {
 .size_bar :hover {
     box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
     transform: scale(1.01);
-    border: solid #aa00ff8a 2px;
+    border: solid #b17eca 2px;
     transform: rotateZ(6deg);
 }
 
@@ -191,8 +191,8 @@ h3 {
 .size_bar_item.selecionado {
     /*adiciona esses parametros ao item selecionado*/
     color: whitesmoke;
-    border: solid #ff00ee 2px;
-    background-color: #f52ae8;
+    border: solid #ca92e6 2px;
+    background-color: #e76edf;
     transform: rotateZ(6deg);
 }
 

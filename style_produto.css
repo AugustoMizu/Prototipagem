@@ -14,7 +14,7 @@ header /* Estiliza o cabeçalho */ {
     align-items: center; /* Centraliza verticalmente os itens */
     justify-content: center; /* Centraliza horizontalmente os itens */
     height: 79px; /* Define a altura do cabeçalho */
-    background-color: purple; /* Define a cor de fundo como roxa */
+    background-color: #b17eca; /* Define a cor de fundo como roxa */
     position: relative; /* Define a posição relativa para ajustes */
     z-index: 11; /* Define a ordem de empilhamento do cabeçalho */
 }
@@ -103,9 +103,9 @@ input /* Campo de entrada */ {
 }
 
 .box {
-    background-color: #aa00ff; /* Cor de fundo */
+    background-color: #745dc4; /* Cor de fundo */
     color: white; /* Cor do texto */
-    border: 1px solid #8800cc; /* Cor da borda, mais escura para contraste */
+    border: 1px solid #745dc4; /* Cor da borda, mais escura para contraste */
     padding: 20px;
     width: 250px; /* Ajuste o tamanho se necessário */
     height: 80px;
