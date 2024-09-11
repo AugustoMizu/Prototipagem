@@ -52,6 +52,7 @@ input {
     width: 100%;
     height: 41px;
     border-radius: 10px;
+    border: none;
 }
 
 .label_icons {

@@ -20,7 +20,6 @@ header /* Estiliza o cabeçalho */ {
 }
 
 .main_bar /* Barra principal de navegação */ {
-    box-sizing: border-box; /* Inclui borda e preenchimento na largura total */
     padding: 0 10px 0 20px; /* Define preenchimento interno específico */
     width: 100%; /* Largura total do contêiner */
     height: 100%; /* Altura total do contêiner */
@@ -36,8 +35,12 @@ header /* Estiliza o cabeçalho */ {
     height: 41px; /* Altura específica da barra */
     max-width: 633px; /* Largura máxima da barra */
 }
+.bar_pesq input{
+    border: none;
+}
 
 input /* Campo de entrada */ {
+    border: none;
     width: 100%; /* Ocupa toda a largura disponível */
     height: 41px; /* Altura específica do campo */
     border-radius: 10px; /* Bordas arredondadas do campo */
