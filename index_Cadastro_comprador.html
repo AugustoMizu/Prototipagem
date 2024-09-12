@@ -32,6 +32,53 @@
                 <label for="confirmacao_senha">Confirmação de Senha:</label><br>
                 <input type="password" id="confirmacao_senha" name="confirmacao_senha" required minlength="8" maxlength="20" placeholder="Confirme sua senha"><br><br>
 
+                <!-- Campo de seleção de sexo -->
+                <label for="sexo">Sexo:</label><br>
+                <input type="radio" id="feminino" name="sexo" value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <input type="radio" id="masculino" name="sexo" value="masculino" required>
+                <label for="masculino">Masculino</label><br><br>
+
+                <!-- Campos de endereço e telefone conforme imagem -->
+                <label for="celular">DDD e número de celular:</label><br>
+                <input type="tel" id="celular" name="celular" required pattern="\d{2} \d{5}-\d{4}" placeholder="Ex: 11 98765-4321"><br><br>
+
+                <label for="cep">Seu CEP:</label><br>
+                <input type="text" id="cep" name="cep" required pattern="\d{5}-\d{3}" placeholder="Ex: 12345-678"><br><br>
+
+                <label for="tipo_endereco">Tipo do Endereço:</label><br>
+                <select id="tipo_endereco" name="tipo_endereco" required>
+                    <option value="residencial">Residencial</option>
+                    <option value="comercial">Comercial</option>
+                </select><br><br>
+
+                <label for="rua">Nome da Rua:</label><br>
+                <input type="text" id="rua" name="rua" required placeholder="Informe o nome da rua"><br><br>
+
+                <label for="numero">Número:</label><br>
+                <input type="text" id="numero" name="numero" required placeholder="Número da residência"><br><br>
+
+                <label for="complemento">Complemento:</label><br>
+                <input type="text" id="complemento" name="complemento" placeholder="Apto, Bloco, etc."><br><br>
+
+                <label for="bairro">Bairro:</label><br>
+                <input type="text" id="bairro" name="bairro" required placeholder="Informe o bairro"><br><br>
+
+                <label for="estado">Estado:</label><br>
+                <select id="estado" name="estado" required>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="ES">Espírito Santo</option>
+                    <!-- Adicione mais estados conforme necessário -->
+                </select><br><br>
+
+                <label for="cidade">Cidade:</label><br>
+                <input type="text" id="cidade" name="cidade" required placeholder="Informe a cidade"><br><br>
+
+                <label for="referencia">Ponto de referência:</label><br>
+                <input type="text" id="referencia" name="referencia" placeholder="Informe um ponto de referência"><br><br>
+
                 <!-- Botão que redireciona para a página de sucesso -->
                 <button type="submit">Cadastrar</button>
             </form>
