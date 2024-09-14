@@ -5,7 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuário cadastrado</title>
     <link rel="stylesheet" href="style_Cadastro_comprador.css">
-    <link rel="shortcut icon" type="imagex/x-icon" href="logo_imagem/icon_navegador.png">
+    <link rel="shortcut icon" type="image/x-icon" href="logo_imagem/icon_navegador.png">
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const userName = getQueryParam('nome');
+            if (userName) {
+                document.getElementById('user-name').textContent = userName;
+            }
+        });
+    </script>
 </head>
 <body>
     <div class="header">
@@ -15,7 +28,7 @@
     <div class="container">
         <div class="form-wrapper">
             <h2>Cadastro Realizado com Sucesso!</h2>
-            <p>Bem-vindo(a) ao nosso site, <strong>Nome do Usuário</strong>!</p>
+            <p>Bem-vindo(a) ao nosso site, <strong id="user-name"></strong>!</p>
             <p>Estamos felizes em tê-lo(a) conosco. Agora você pode aproveitar todas as funcionalidades do site.</p>
             <br>
             <!-- Botão para voltar à página inicial -->
