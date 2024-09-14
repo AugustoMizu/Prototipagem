@@ -27,22 +27,70 @@ body {
     flex-direction: column;
     padding: 20px;
     width: 100%;
-    max-width: 500px;
+    max-width: 1200px; /* Ajustado para combinar com o CSS original */
 }
 
 .form-wrapper {
-    border: none; /* Remove a linha ao redor */
+    background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
     width: 100%;
     max-width: 500px;
 }
 
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.form-grid label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-grid input[type="text"],
+.form-grid input[type="email"],
+.form-grid input[type="password"],
+.form-grid input[type="tel"],
+.form-grid input[type="date"],
+.form-grid select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Alinhamento especial para campos de 2 colunas */
+.form-grid .full-width {
+    grid-column: span 2;
+}
+
+button[type="submit"] {
+    grid-column: span 4;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
 input[type="text"],
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+input[type="select"] {
     width: 100%;
     padding: 10px 40px 10px 10px;
     margin: 8px 0;
