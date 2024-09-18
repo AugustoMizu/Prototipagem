@@ -12,6 +12,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #aa00ff,#b93ff7,#cc73f8,rgb(255, 255, 255));
+            background-size: cover;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-top: 40px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .form-wrapper {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,8 +53,10 @@
                 <input type="text" placeholder="pesquisar">
             </section>
             <section class="icon">
-                <span class="material-symbols-outlined">shopping_cart</span>
-                <label class="label_icons" for="material-symbols-outlined">Carrinho</label>
+                <a href="index_carrinho.html">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                    <label class="label_icons" for="material-symbols-outlined">Carrinho</label>
+                </a>
             </section>
             <section class="icon">
                 <a href="index_login_.html">
@@ -37,15 +71,17 @@
         </div>
     </header>
     <MAIn>
-        <h1 align="middle">Envie Seu documento aqui!!!!!</h1>
-        <form id="upload-form" action="/upload" method="post" enctype="multipart/form-data">
-            <input type="file" name="image" accept="image/*" required>
-            <button type="submit">Enviar</button>
-            <div class="progress">
-                <progress id="upload-progress" value="0" max="100"></progress>
-                <span id="upload-status"></span>
+        <div class="header">
+            <h1>Possui receita medica?</h1>
+        </div>
+        <div class="form-wrapper">
+            <div class="container">
+                <form id="upload-form" action="/upload" method="post" enctype="multipart/form-data">
+                    <input type="file" name="image" accept="image/*" required>
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
-        </form>
+        </div>
     </MAIn>
 </body>
 </html>
