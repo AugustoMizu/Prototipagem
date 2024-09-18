@@ -87,7 +87,9 @@ input /* Campo de entrada */ {
 }
 
 /* Define o contêiner do banner para ocupar toda a largura da tela */
-.banner-container {
+.banner-container 
+{
+   
     width: 100%; /* Largura total da viewport */
     height: 300px;  /* Altura ajusta proporcionalmente */
     overflow: hidden; /* Evita barras de rolagem */
@@ -274,14 +276,14 @@ input /* Campo de entrada */ {
     
 }
 /*-------------*/
-/*main {
+#main_carrinho{                       /*--------tag main da pagina do carrinho--------*/
     display: flex;
-    flex-direction: column; /* Organiza os itens na vertical */
+    flex-direction: column; /*Organiza os itens na vertical */
     align-items: center; /* Centraliza horizontalmente */
-    justify-content: center; /* Centraliza verticalmente */
-    height: 100vh; /* Ocupa a altura total da tela */
-    margin: 0; /* Remove margens extras */
-}*/
+    justify-content: center;  /*Centraliza verticalmente*/ 
+    height: 100vh;  /*Ocupa a altura total da tela */
+    margin: 0; /*Remove margens extras */
+} 
 
 footer {
     background-color: #333;
