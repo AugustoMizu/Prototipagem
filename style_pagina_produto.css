@@ -20,7 +20,7 @@ main {
 
 a {
     text-decoration: none;
-    color: #333;
+    color: black;
 }
 
 
@@ -46,6 +46,7 @@ a {
     width: 100%;
     height: 41px;
     max-width: 633px;
+    min-width: 200px;
 }
 
 input {
@@ -219,9 +220,39 @@ h3 {
     opacity: .9;
 }
 
+.botao_receita {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 0;
+    background-color: #a95710;
+    color: #fff;
+    height: 47px;
+    width: 80%;
+    border: none;
+    padding: 13px;
+    margin-top: 5px;
+    margin-left: 35px;
+    cursor: pointer;
+    border-radius: 4px;
+    transform: color 3s ease-in-out;
+}
+
+.botao_receita:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+    transform: scale(1.01);
+    opacity: .9;
+}
+
+.loja_container {
+    border-bottom: solid #bdbbbb 1px;
+}
+
 /*/////css carrossel/////*/
 .product-item {
     border: 1px solid rgb(219, 219, 219);
+    width: 200px;
 }
 
 .product-info :hover {
@@ -278,17 +309,15 @@ h3 {
 }
 
 .product-price {
-    color: #fcb941;
+    color: #d08905;
+    font-size: 1.5rem;
 }
 
 .rating {
     font-size: 5px;
 }
 
-.product-item {
-    width: 200px;
-}
-/*footer*/
+/*--------------footer-----------*/
 footer {
     background-color: #333;
     color: #fff;

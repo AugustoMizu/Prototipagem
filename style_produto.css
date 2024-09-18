@@ -14,9 +14,20 @@ header /* Estiliza o cabeçalho */ {
     align-items: center; /* Centraliza verticalmente os itens */
     justify-content: center; /* Centraliza horizontalmente os itens */
     height: 79px; /* Define a altura do cabeçalho */
-    background-color: #b17eca; /* Define a cor de fundo como roxa */
+    background-color: #aa00ff; /* Define a cor de fundo como roxa */
     position: relative; /* Define a posição relativa para ajustes */
     z-index: 11; /* Define a ordem de empilhamento do cabeçalho */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#logo {
+    border-radius: 5px;
+    width: 50px;
+    margin: 3%;
 }
 
 .main_bar /* Barra principal de navegação */ {
@@ -59,9 +70,23 @@ input /* Campo de entrada */ {
     align-items: center; /* Centraliza os itens verticalmente */
 }
 
+.container_carrossel_1 {
+    padding-top: 20px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: #ddd;
+}
+
+.container_carrossel_2{
+    padding-top: 20px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: #ddd;
+}
+
 /* Define o contêiner do banner para ocupar toda a largura da tela */
 .banner-container {
-    width: 100vw; /* Largura total da viewport */
+    width: 100%; /* Largura total da viewport */
     height: 300px;  /* Altura ajusta proporcionalmente */
     overflow: hidden; /* Evita barras de rolagem */
     justify-content: center;
@@ -72,9 +97,24 @@ input /* Campo de entrada */ {
 .banner-container img {
     width: 100%; /* Largura total do contêiner */
     height: auto; /* Altura ajusta proporcionalmente */
-    display: flex; /* Remove espaços em branco abaixo da imagem */
+}
 
- 
+
+/* Define o contêiner do banner para ocupar toda a largura da tela */
+.banner-container_2 {
+    width: 100vw; /* Largura total da viewport */
+    height: 300px;  /* Altura ajusta proporcionalmente */
+    margin-top: 40px;
+    margin-bottom: 50px;
+    border-bottom: #333 solid 10px;
+    overflow: hidden; /* Evita barras de rolagem */
+    display: flex; 
+}
+
+.banner-container_2 img {
+    width: 100%; /* Largura total do contêiner */
+    height: auto; /* Altura ajusta proporcionalmente */
+    display: flex; /* Remove espaços em branco abaixo da imagem */
 }
 .imagens { /* meche nas imagens pequenas dos sapatos */
     display: flex; /* Define o layout com flexbox */
@@ -148,14 +188,6 @@ input /* Campo de entrada */ {
     font-weight: bold; /* Texto em negrito */
 }
 
-main {
-    display: flex;
-    flex-direction: column; /* Organiza os itens na vertical */
-    align-items: center; /* Centraliza horizontalmente */
-    justify-content: center; /* Centraliza verticalmente */
-    height: 100vh; /* Ocupa a altura total da tela */
-    margin: 0; /* Remove margens extras */
-}
 
 #imagem_carrinho {
     max-width: 100%; /* Ajusta a largura máxima da imagem */
@@ -168,6 +200,78 @@ main {
     font-family: 'Roboto', sans-serif; /* Aplica a fonte Roboto */
 }
 
+/*------------carrossel------------------*/
+.product-item {
+    border: 1px solid rgb(219, 219, 219);
+    width: 250px;
+}
+
+.product-info :hover {
+    background-color: #efefef;
+}
+
+.carrossel_img {
+    position: relative;
+    overflow: hidden;
+}
+
+.btns {
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    font-size: 15px;
+    font-weight: 300;
+    transition: all 0.3s ease-in-out;
+}
+
+.btns button {
+    border: none;
+    background-color: rgb(39, 39, 39);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.btns button:hover {
+    color: #fcb941;
+}
+
+.carrossel_img:hover .btns {
+    bottom: 0;
+}
+
+.heart-icon {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    font-size: 18px;
+}
+
+.product-type {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.product-name {
+    transition: all 0.3s ease-in-out;
+}
+
+.product-name:hover {
+    color: #fcb941 !important;
+}
+
+.product-price {
+    color: #d08905;
+    font-size: 1.5rem;
+}
+
+.rating {
+    font-size: 5px;
+}
+
+.product-item {
+    
+}
+/*-------------*/
 
 footer {
     background-color: #333;
