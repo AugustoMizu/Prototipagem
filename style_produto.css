@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-
+html{
+    size: 100vh;
+}
 
 /* Aplica a todos os elementos */
 * {
@@ -272,6 +274,14 @@ input /* Campo de entrada */ {
     
 }
 /*-------------*/
+/*main {
+    display: flex;
+    flex-direction: column; /* Organiza os itens na vertical */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    height: 100vh; /* Ocupa a altura total da tela */
+    margin: 0; /* Remove margens extras */
+}*/
 
 footer {
     background-color: #333;
