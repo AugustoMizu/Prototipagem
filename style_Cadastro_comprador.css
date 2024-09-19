@@ -1,4 +1,4 @@
-body { 
+body {   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,7 +27,7 @@ body {
     flex-direction: column;
     padding: 20px;
     width: 100%;
-    max-width: 1200px; /* Ajustado para combinar com o CSS original */
+    max-width: 1200px;
 }
 
 .form-wrapper {
@@ -195,7 +195,7 @@ button[type="submit"]:hover {
     margin-right: 10px;
 }
 
-.social_link{
+.social_link {
     text-decoration: none;
 }
 
@@ -227,4 +227,69 @@ button[type="submit"]:hover {
 
 span {
     color: red; 
+}
+
+/* Footer Section */
+footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.central-de-relacionamento h2 {
+    margin-bottom: 10px;
+}
+
+.central-de-relacionamento a {
+    color: #aa00ff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.payment-methods img {
+    margin: 0 10px;
+    width: 30px;
+    height: auto;
+}
+
+.tire-suas-duvidas button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tire-suas-duvidas button:hover {
+    background-color: #45a049;
+}
+
+.legal-info {
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: justify;
+    max-width: 800px;
+    color: #ccc;
+}
+
+.legal-info a {
+    color: #aa00ff;
+    text-decoration: none;
 }
