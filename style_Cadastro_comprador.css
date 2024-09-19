@@ -1,4 +1,5 @@
-body {    
+ /* Estilos gerais */
+body {     
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -250,7 +251,7 @@ span {
 
 .box h3 {
     margin-bottom: 1px;
-    color: #b920b9;
+    color: #4920b9;
 }
 
 .box ul {
@@ -261,4 +262,51 @@ span {
 .box ul li {
     margin: 10px 0;
     font-size: 14px;
+}
+
+/* Novos estilos para a seção de Atendimento e Central de Vendas */
+.section-atendimento {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.box-atendimento {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%; /* Tamanho flexível para ocupar duas colunas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.box-atendimento h3 {
+    margin-bottom: 10px;
+    color: #b920b9;
+}
+
+.box-atendimento p, 
+.box-atendimento a {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #333;
+}
+
+.box-atendimento a {
+    color: #aa00ff;
+    text-decoration: none;
+}
+
+.box-atendimento a:hover {
+    text-decoration: underline;
+}
+
+/* Ajustes responsivos para dispositivos móveis */
+@media (max-width: 768px) {
+    .box-atendimento {
+        width: 100%; /* Ocupar a largura total em telas menores */
+    }
 }
