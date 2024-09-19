@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="/owl_carousel/owl.theme.default.css">
     <!--css geral-->
     <link rel='stylesheet' type='text/css' href='style_pagina_produto.css'>
+    <link rel="stylesheet" href="/style_produto.css">
 
 
     <script src="/script_pag_prod.js" defer></script>
@@ -33,9 +34,15 @@
     <header>
         <div class="main_bar">
             <a href="/index_produto_1.html"><img src="/IMG-20240821-WA0022.jpg" alt="logo" id="logo"></a>
-            <section class="bar_pesq">
-                <input type="text" placeholder="pesquisar">
-            </section>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Pesquise por produtos...">
+                <ul class="search-filter">
+                  <li>Por marca</li>
+                  <li>Pelo nome da loja</li>
+                  <li>Por indicação</li>
+                  <li>Por avaliações</li>
+                </ul>
+              </div>
             <section class="icon">
                 <a href="/index_carrinho.html" class="cart-link"> <!--link pagina carrinho-->
                     <span class="material-symbols-outlined">shopping_cart</span>

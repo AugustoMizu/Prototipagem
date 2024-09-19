@@ -43,14 +43,51 @@ a {
     position: relative; /* Posição relativa para ajustes de layout */
 }
 
-.bar_pesq /* Barra de pesquisa */ {
-    width: 100%; /* Largura total da barra */
-    height: 41px; /* Altura específica da barra */
-    max-width: 633px; /* Largura máxima da barra */
-}
-.bar_pesq input{
-    border: none;
-}
+/*barra de pesquisa*/
+  
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 400px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .search-filter {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1;
+  }
+  
+  .search-filter li {
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .search-filter li:last-child {
+    border-bottom: none;
+  }
+  
+  .search-input:focus + .search-filter {
+    display: block;
+  }
+  /*****************/
+
 
 input /* Campo de entrada */ {
     border: none;
@@ -272,9 +309,6 @@ input /* Campo de entrada */ {
     font-size: 5px;
 }
 
-.product-item {
-    
-}
 /*-------------*/
 #main_carrinho{                       /*--------tag main da pagina do carrinho--------*/
     display: flex;
