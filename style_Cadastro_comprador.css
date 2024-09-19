@@ -1,4 +1,4 @@
-body {   
+body {    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,12 +12,12 @@ body {
 
 .header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
 }
 
 .logo {
-    max-width: 150px;
-    margin-bottom: 10px;
+    max-width: 120px;
+    margin-bottom: 2px;
 }
 
 .container {
@@ -27,7 +27,7 @@ body {
     flex-direction: column;
     padding: 20px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 800px;
 }
 
 .form-wrapper {
@@ -229,67 +229,36 @@ span {
     color: red; 
 }
 
-/* Footer Section */
-footer {
+/* Novos estilos adicionados */
+
+.section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 2px;
+    max-width: 1200px;
     width: 100%;
-    background-color: #333;
-    color: white;
-    padding: 10px;
+}
+
+.box {
+    background-color: #c300ff10;
+    padding: 20px;
+    border-radius: 10px;
     text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.box h3 {
+    margin-bottom: 1px;
+    color: #b920b9;
 }
 
-.central-de-relacionamento h2 {
-    margin-bottom: 10px;
+.box ul {
+    list-style: none;
+    padding: 0;
 }
 
-.central-de-relacionamento a {
-    color: #aa00ff;
-    text-decoration: none;
-    margin-bottom: 10px;
-}
-
-.payment-methods {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-.payment-methods img {
-    margin: 0 10px;
-    width: 30px;
-    height: auto;
-}
-
-.tire-suas-duvidas button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.tire-suas-duvidas button:hover {
-    background-color: #45a049;
-}
-
-.legal-info {
-    margin-top: 20px;
-    font-size: 12px;
-    text-align: justify;
-    max-width: 800px;
-    color: #ccc;
-}
-
-.legal-info a {
-    color: #aa00ff;
-    text-decoration: none;
+.box ul li {
+    margin: 10px 0;
+    font-size: 14px;
 }
