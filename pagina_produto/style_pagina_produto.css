@@ -94,6 +94,7 @@ input {
 #img_produto {
     width: 60%;
     min-width: 30vw;
+    max-height: 30vw;
     object-fit: cover;
     transition: .1s all ease-in-out;
     transform-origin: center center;
