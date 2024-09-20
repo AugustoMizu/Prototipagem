@@ -1,55 +1,383 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 79px;
-    background-color: purple;
-    position: relative;
-    z-index: 11;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+html{
+    size: 100vh;
 }
-.main_bar{
+
+/* Aplica a todos os elementos */
+* {
+    padding: 0; /* Remove todo o preenchimento interno */
+    margin: 0;  /* Remove toda a margem externa */
+}
+
+
+header /* Estiliza o cabeçalho */ {
+    display: flex; /* Define o layout do cabeçalho com flexbox */
+    align-items: center; /* Centraliza verticalmente os itens */
+    justify-content: center; /* Centraliza horizontalmente os itens */
+    height: 79px; /* Define a altura do cabeçalho */
+    background-color: #aa00ff; /* Define a cor de fundo como roxa */
+    position: relative; /* Define a posição relativa para ajustes */
+    z-index: 11; /* Define a ordem de empilhamento do cabeçalho */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#logo {
+    border-radius: 5px;
+    width: 50px;
+    margin: 3%;
+}
+
+.main_bar /* Barra principal de navegação */ {
+    padding: 0 10px 0 20px; /* Define preenchimento interno específico */
+    width: 100%; /* Largura total do contêiner */
+    height: 100%; /* Altura total do contêiner */
+    max-width: 1306px; /* Define largura máxima */
+    display: flex; /* Utiliza flexbox para o layout */
+    justify-content: space-between; /* Espaça os elementos igualmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    position: relative; /* Posição relativa para ajustes de layout */
+}
+
+/*barra de pesquisa*/
+  
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 400px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     box-sizing: border-box;
-    padding: 0 10px 0 20px;
-    width: 100%;
-    height: 100%;
-    max-width: 1306px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+  }
+  
+  .search-filter {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1;
+  }
+  
+  .search-filter li {
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .search-filter li:last-child {
+    border-bottom: none;
+  }
+  
+  .search-input:focus + .search-filter {
+    display: block;
+  }
+  /*****************/
+
+
+input /* Campo de entrada */ {
+    border: none;
+    width: 100%; /* Ocupa toda a largura disponível */
+    height: 41px; /* Altura específica do campo */
+    border-radius: 10px; /* Bordas arredondadas do campo */
 }
-.bar_pesq{
-    width: 100%;
-    height: 41px;
-    max-width: 633px;
+
+.label_icons /* Contêiner para ícones de rótulo */ {
+    position: relative; /* Posição relativa para ajustes */
+    display: flex; /* Layout flexível com flexbox */
+    align-items: flex-end; /* Alinha os itens ao final do eixo vertical */
 }
-input{
-    width: 100%;
-    height: 41px;
-    border-radius: 10px;
+
+.icon /* Estiliza os ícones */ {
+    display: flex; /* Utiliza flexbox para layout */
+    margin: 0px 5px; /* Define margem horizontal de 5px */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
 }
-.label_icons{
-    position: relative;
-    display: flex;
-    align-items: flex-end;
+
+.container_carrossel_1 {
+    padding-top: 20px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: #ddd;
 }
-.icon{
-    display: flex;
-    margin: 0px 5px;
+
+.container_carrossel_2{
+    padding-top: 20px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: #ddd;
+}
+
+/* Define o contêiner do banner para ocupar toda a largura da tela */
+.banner-container 
+{
+   
+    width: 100%; /* Largura total da viewport */
+    height: 300px;  /* Altura ajusta proporcionalmente */
+    overflow: hidden; /* Evita barras de rolagem */
     justify-content: center;
-    align-items: center;
+    display: flex;
+    
 }
 
 .banner-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-    max-width: 1920px; 
-    margin: 0 auto; 
+    width: 100%; /* Largura total do contêiner */
+    height: auto; /* Altura ajusta proporcionalmente */
 }
 
+
+/* Define o contêiner do banner para ocupar toda a largura da tela */
+.banner-container_2 {
+    width: 100vw; /* Largura total da viewport */
+    height: 300px;  /* Altura ajusta proporcionalmente */
+    margin-top: 40px;
+    margin-bottom: 50px;
+    border-bottom: #333 solid 10px;
+    overflow: hidden; /* Evita barras de rolagem */
+    display: flex; 
+}
+
+.banner-container_2 img {
+    width: 100%; /* Largura total do contêiner */
+    height: auto; /* Altura ajusta proporcionalmente */
+    display: flex; /* Remove espaços em branco abaixo da imagem */
+}
+.imagens { /* meche nas imagens pequenas dos sapatos */
+    display: flex; /* Define o layout com flexbox */
+    flex-wrap: wrap; /* Permite que as imagens se movam para a próxima linha */
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    gap: 10px; /* Espaço entre as imagens */
+    padding: 10px; /* Preenchimento ao redor das imagens */
+}
+
+.imagens a {  /* meche nas imagens pequenas dos sapatos */
+    display: block; /* Exibe os links como blocos para controlar o layout */
+}
+
+.imagens img { /* meche nas imagens pequenas dos sapatos */
+    display: block; /* Remove o espaço extra abaixo das imagens */
+    max-width: 100%; /* Ajusta a largura das imagens para não exceder o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.promocoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: #745dc4; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: 1px solid #745dc4; /* Cor da borda, mais escura para contraste */
+    padding: 20px;
+    width: 250px; /* Ajuste o tamanho se necessário */
+    height: 80px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito para destaque */
+    font-family: 'Roboto', sans-serif; /* Fonte personalizada */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves para efeitos */
+}
+
+.box:hover {
+    transform: translateY(-5px); /* Levanta a caixa ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+}
+
+/* Estilos para a barra de opções */
+.options-bar {
+    background-color: #f0f0f0; /* Cor de fundo cinza claro */
+    padding: 10px 0; /* Espaçamento interno */
+}
+
+.options-bar ul {
+    list-style: none; /* Remove marcadores da lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Usa Flexbox para alinhar os itens */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+.options-bar li {
+    margin: 0 15px; /* Espaçamento entre os itens */
+}
+
+.options-bar a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: #333; /* Cor do texto */
+    font-weight: bold; /* Texto em negrito */
+}
+
+
+#imagem_carrinho {
+    max-width: 100%; /* Ajusta a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+#mensagem_carrinho {
+    margin-top: 20px; /* Espaçamento entre a imagem e a mensagem */
+    text-align: center; /* Centraliza o texto */
+    font-family: 'Roboto', sans-serif; /* Aplica a fonte Roboto */
+}
+
+/*------------carrossel------------------*/
+.product-item {
+    border: 1px solid rgb(219, 219, 219);
+    width: 250px;
+}
+
+.product-info :hover {
+    background-color: #efefef;
+}
+
+.carrossel_img {
+    position: relative;
+    overflow: hidden;
+}
+
+.btns {
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    font-size: 15px;
+    font-weight: 300;
+    transition: all 0.3s ease-in-out;
+}
+
+.btns button {
+    border: none;
+    background-color: rgb(39, 39, 39);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.btns button:hover {
+    color: #fcb941;
+}
+
+.carrossel_img:hover .btns {
+    bottom: 0;
+}
+
+.heart-icon {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    font-size: 18px;
+}
+
+.product-type {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.product-name {
+    transition: all 0.3s ease-in-out;
+}
+
+.product-name:hover {
+    color: #fcb941 !important;
+}
+
+.product-price {
+    color: #d08905;
+    font-size: 1.5rem;
+}
+
+.rating {
+    font-size: 5px;
+}
+
+/*-------------*/
+#main_carrinho{                       /*--------tag main da pagina do carrinho--------*/
+    display: flex;
+    flex-direction: column; /*Organiza os itens na vertical */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center;  /*Centraliza verticalmente*/ 
+    height: 100vh;  /*Ocupa a altura total da tela */
+    margin: 0; /*Remove margens extras */
+} 
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-links {
+    margin-bottom: 15px;
+}
+
+footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-contact {
+    margin-bottom: 15px;
+}
+
+footer .footer-contact p {
+    margin: 5px 0;
+}
+
+footer .footer-social {
+    margin-top: 15px;
+}
+
+footer .footer-social a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .footer-social a:hover {
+    color: #ddd;
+}
+
+.imagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.imagens img {
+    width: 150px;
+    height: auto;
+}
+
+button {
+    background-color: #9b0cd3; /* Cor de fundo, ajuste conforme necessário */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio de Receita Médica</title>
+    <link rel="stylesheet" href="styles_envio_receita.css">
+</head>
+<body>
+    <div class="header">
+        <img src="IMG-20240821-WA0022.jpg" alt="Atypical Foots Logo" class="logo">
+    </div>
+    <div class="container">
+        <h1>Envie sua Receita Médica</h1>
+        <p>Preencha o formulário abaixo para enviar sua receita médica e receber instruções sobre como o calçado personalizado deve ser feito.</p>
+        <form action="index_recebimento_receita.html" method="get" enctype="multipart/form-data">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="descricao">Descrição das Necessidades Especiais:</label>
+            <textarea id="descricao" name="descricao" rows="5" placeholder="Explique como o calçado deve ser ajustado de acordo com a receita médica..." required></textarea>
+
+            <label for="receita">Anexar Receita Médica:</label>
+            <input type="file" id="receita" name="receita" accept=".pdf,.jpg,.jpeg,.png" required>
+
+            <input type="submit" value="Enviar Receita">
+        </form>
+    </div>
+    <div class="back-home">
+        <a href="pagina_produto/index_pagina_produto.html">
+            <button>Voltar para tela do produto</button>
+        </a>
+    </div>
+</body>
+</html>

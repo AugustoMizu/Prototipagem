@@ -1,0 +1,112 @@
+ /* Reseta alguns estilos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estiliza o corpo da página com flexbox e fundo gradiente */
+body {     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #aa00ff, rgb(255, 255, 255));
+    background-size: cover;
+}
+
+/* Estiliza o cabeçalho */
+.header {
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+/* Estiliza o logotipo */
+.logo {
+    max-width: 120px;
+    margin-bottom: 2px;
+}
+
+/* Estiliza o container com flexbox */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal da página */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilização do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Estilização dos rótulos (labels) */
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Campos de entrada de texto e outros inputs */
+input[type="text"], input[type="email"], textarea, input[type="file"] {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Campo de texto ajustável (textarea) */
+textarea {
+    resize: vertical;
+}
+
+/* Botão de envio */
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilização do botão ao passar o mouse */
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+.back-home {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.back-home button,
+.voltar-login-button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #aa00ff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px #800080;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
